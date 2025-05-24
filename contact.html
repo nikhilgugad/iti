@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Govt ITI Kuchaman</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gradient-to-b from-blue-600 to-blue-300 font-sans">
+
+    <!-- Navigation -->
+    <nav class="w-[97vw] mx-auto mt-6 h-auto flex flex-col lg:flex-row items-start lg:items-center justify-between bg-blue-800 rounded-xl px-6 py-4 shadow-lg">
+        <h2 class="text-white text-2xl font-semibold">Govt ITI Kuchaman</h2>
+        
+        <div class="flex flex-col lg:flex-row text-white gap-3 lg:gap-6 mt-4 lg:mt-0">
+            <a href="index.html" class="hover:bg-blue-400 p-2 lg:p-3 rounded-full transition duration-300 text-center">Home</a>
+            <a href="trades.html" class="hover:bg-blue-400 p-2 lg:p-3 rounded-full transition duration-300 text-center">Trades</a>
+            <a href="contact.html" class="hover:bg-blue-400 p-2 lg:p-3 rounded-full transition duration-300 text-center">Contact</a>
+            <a href="about.html" class="hover:bg-blue-400 p-2 lg:p-3 rounded-full transition duration-300 text-center">About</a>
+        </div>
+    </nav>
+    
+    
+
+    <!-- Contact Form Section -->
+    <div class="w-[95vw] lg:w-[70vw] py-16 mx-auto bg-white rounded-xl shadow-xl mt-12 p-6">
+        <h1 class="text-center text-blue-800 font-bold text-4xl mb-6">Contact the Institute</h1>
+
+        <!-- Contact Form -->
+        <form id="contactForm" cla>
+            <div class="flex flex-col gap-6 w-[50%] mx-auto ">
+                <input type="text" id="fullName" placeholder="Full Name" class="input-field bg-slate-300  placeholder:text-gray-700 rounded p-2">
+                <input type="email" id="email" placeholder="Email Address" class="input-field bg-slate-300 placeholder:text-gray-700 rounded p-2">
+                <input type="text" id="mobileNumber" placeholder="Mobile Number" class="input-field bg-slate-300 placeholder:text-gray-700 rounded p-2">
+                <textarea id="message" placeholder="Your Message" class="input-field bg-slate-300 placeholder:text-gray-700 rounded p-2"></textarea>
+                <button type="submit" onclick="submitForm()" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-xl hover:bg-blue-700 transition duration-300">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Contact Developer Form Section -->
+    <div class="w-[95vw] lg:w-[70vw] py-16 mx-auto bg-white rounded-xl shadow-xl mt-12 p-6">
+        <h1 class="text-center text-blue-800 font-bold text-4xl mb-6">Contact Developer</h1>
+
+        <!-- Contact Developer Form -->
+        <form id="contactDeveloperForm">
+            <div class="flex flex-col gap-6  w-[50%] mx-auto">
+                <input type="text" id="developerFullName" placeholder="Full Name" class="input-field bg-slate-300 placeholder:text-gray-700 rounded p-2">
+                <input type="email" id="developerEmail" placeholder="Email Address" class="input-field bg-slate-300 placeholder:text-gray-700 rounded p-2">
+                <input type="text" id="developerMobileNumber" placeholder="Mobile Number" class="input-field bg-slate-300 placeholder:text-gray-700 rounded p-2">
+                <textarea id="developerMessage" placeholder="Your Message" class="input-field bg-slate-300 placeholder:text-gray-700 rounded p-2"></textarea>
+                <button type="submit" onclick="submitForm()" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-xl hover:bg-blue-700 transition duration-300">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="flex bg-blue-700 w-full justify-center items-center h-16 mt-8">
+        <p class="text-white text-lg">Made by <a class="font-semibold" href="http://nikhilgugad.github.io/portfolio1/" target="_blank">Nikhil Gugad</a> | 2024 &copy; All rights reserved</p>
+    </footer>
+    <script>
+        function submitForm(){
+            alert("Thanks for contacting, we'll reach you as soon as possible")
+        }
+    </script>
+</body>
+</html>
